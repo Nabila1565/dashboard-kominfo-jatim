@@ -158,7 +158,7 @@ def get_base64_image(image_path):
     if image_file.exists():
         return base64.b64encode(image_file.read_bytes()).decode()
     return""
-bg_image = get_base64_image(r"C:\Users\nabila\Kominfo\Jatim.jpg")
+bg_image = get_base64_image("Jatim.jpg")
 
 st.markdown(f"""
 <style>
@@ -195,7 +195,7 @@ st.markdown(f"""
             
 
 #Membaca data
-df = pd.read_csv(r"C:\Users\nabila\Kominfo\PertumbuhanEkonomi.csv")
+df = pd.read_csv("PertumbuhanEkonomi.csv")
 
 #Isi
 if menu == "Informasi Jawa Timur":
@@ -506,7 +506,7 @@ masih dilestarikan hingga saat ini.
     """, unsafe_allow_html=True
     )
     #Pertumbuhan Ekonomi Berdasarkan Lapangan Usaha Tahun 2025
-    df_lapangan = pd.read_csv(r"C:\Users\nabila\Kominfo\PE Lapangan Usaha - Sheet1.csv", header=0)
+    df_lapangan = pd.read_csv("PE Lapangan Usaha - Sheet1.csv", header=0)
 
     #Mengambil kolom yang tergabung
     df_lapangan= df_lapangan.iloc[:,0]
@@ -742,7 +742,7 @@ elif menu == "Dashboard":
     
     
    
-    df = pd.read_csv(r"PertumbuhanEkonomi.csv")
+    df = pd.read_csv("PertumbuhanEkonomi.csv")
     #Change wide to long
     df_long = df.melt(
     id_vars=["Kabupaten/Kota"],   # kolom tetap
@@ -1197,7 +1197,7 @@ elif menu == "Dashboard":
     )
 
     
-    df_inflasi = pd.read_csv(r"C:\Users\nabila\Kominfo\Inflasi (1).csv")
+    df_inflasi = pd.read_csv("Inflasi (1).csv")
     df_inflasi.columns = ["tahun", "periode", "jumlah"]
 
     # Cleaning data
@@ -1431,7 +1431,7 @@ elif menu == "Dashboard":
             """, height=470)
 
     #Inflasi Berdasarkan Kabupaten/Kota
-    df_inflasi_kab = pd.read_csv(r"C:\Users\nabila\Kominfo\Inflasi Kab_Kota - Sheet1.csv")
+    df_inflasi_kab = pd.read_csv("Inflasi Kab_Kota - Sheet1.csv")
     # Membersihkan kolom inflasi
     df_inflasi_kab["Inflasi (Persen)"] = (df_inflasi_kab["Inflasi (Persen)"]
                                          .astype(str)
