@@ -452,8 +452,7 @@ masih dilestarikan hingga saat ini.
     fig.update_layout(
     plot_bgcolor="#000000",
     paper_bgcolor="#000000",
-    font=dict(color="white"),
-    text = "Nilai",
+    font=dict(color="white"), 
     xaxis = dict(
         title=dict(text="Tahun", font=dict(color="white")),
         tickfont=dict(color="white")
@@ -473,11 +472,7 @@ masih dilestarikan hingga saat ini.
     font=dict(size=16, color="white"),
     align="left")
 
-    fig. update_traces(
-        texttemplate="%{text:.2f}%",
-        textposition="outside",
-        textfont=dict(color="white", size=12)
-    )
+   
     st.plotly_chart(fig)
     
     
