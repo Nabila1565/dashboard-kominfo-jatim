@@ -704,13 +704,13 @@ masih dilestarikan hingga saat ini.
         st.markdown(f"""
         <div class="box">
             <div style="font-size:18px; font-weight:bold; color:white;">
-                Nilai Inflasi Terkecil 
+                Nilai Inflasi Terkecil Periode Tahun 2018-2025
             </div>
             <div style="font-size:50px; font-weight:bold; color:white;">  
                 {min_nilai_inflasi:.2f}%
             </div>
             <div style="font-size:20px; font-weight:bold; color:white;">
-                Tahun {min_tahun_inflasi}:
+                Tahun {min_tahun_inflasi:}
             </div>
         </div>
         """, unsafe_allow_html=True)
@@ -718,10 +718,13 @@ masih dilestarikan hingga saat ini.
         st.markdown(f"""
         <div class="box">
              <div style="font-size:18px; font-weight:bold; color:white;">
-                Rata-Rata Inflasi Terbesar Tahun {max_tahun_inflasi:}
+                Nilai Inflasi Terbesar Periode Tahun 2018-2025
             </div>
             <div style="font-size:50px; font-weight:bold; color:white;">
                 {max_value_inflasi:.2f}%
+            </div>
+            <div style="font-size:18px; font-weight:bold; color:white;">
+                 Tahun {max_tahun_inflasi}
             </div>
         </div>
         """, unsafe_allow_html=True)
