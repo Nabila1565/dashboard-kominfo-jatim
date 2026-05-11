@@ -693,7 +693,7 @@ masih dilestarikan hingga saat ini.
         st.markdown(f"""
         <div class="box"style= "text-align:center;">     
             <div style="font-size:18px; font-weight:bold; color:white;">
-                Rata-rata Inflasi Total Tahun 2018-2025
+                Rata-rata Inflasi Tahun 2018-2025
             </div>
             <div style="font-size:50px;font-weight:bold; color: white;">
               {mean_total_inflasi:.2f}%
