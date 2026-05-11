@@ -634,6 +634,7 @@ masih dilestarikan hingga saat ini.
         mean_inflasi_tahunan,
         x="tahun",
         y="jumlah",
+        text = "jumlah"
         markers=True)
 
     fig_line.update_traces(
@@ -649,6 +650,7 @@ masih dilestarikan hingga saat ini.
         tickmode="linear",
         dtick=1
     )
+
 
     fig_line.add_annotation(
     text="Sumber: BPS Jatim Tahun 2025",
