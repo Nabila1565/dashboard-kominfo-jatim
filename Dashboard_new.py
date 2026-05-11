@@ -1128,7 +1128,7 @@ elif menu == "Dashboard":
             texttemplate="%{text:.2f}%",
             textposition="top center",
             textfont=dict(color="white", size=12),
-)           marker=dict(size=9),
+            marker=dict(size=9),
             line=dict(width=3)
         )
           
