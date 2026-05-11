@@ -252,7 +252,7 @@ masih dilestarikan hingga saat ini.
     <h3 class="info-jatim-title">Peta Kabupaten/Kota Provinsi Jawa Timur</h3>
     """, unsafe_allow_html=True
     )
-    peta = Image.open("peta.jpg")
+    peta = Image.open("peta(2).jpeg")
     st.image(peta, caption="Peta Kabupaten/Kota Provinsi Jawa Timur", use_container_width=True)
 
     #Grafik Kondisi Pertumbuhan Ekonomi
