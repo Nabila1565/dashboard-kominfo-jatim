@@ -704,10 +704,13 @@ masih dilestarikan hingga saat ini.
         st.markdown(f"""
         <div class="box">
             <div style="font-size:18px; font-weight:bold; color:white;">
-                Rata-Rata Inflasi Terkecil Tahun {min_tahun_inflasi:}
+                Nilai Inflasi Terkecil 
             </div>
             <div style="font-size:50px; font-weight:bold; color:white;">  
                 {min_nilai_inflasi:.2f}%
+            </div>
+            <div style="font-size:20px; font-weight:bold; color:white;">
+                Tahun {min_tahun_inflasi}:
             </div>
         </div>
         """, unsafe_allow_html=True)
