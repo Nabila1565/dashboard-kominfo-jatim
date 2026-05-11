@@ -295,7 +295,8 @@ masih dilestarikan hingga saat ini.
         labels={
             "Kabupaten/Kota":"Kabupaten/Kota",
             "Nilai":"Nilai (%)"
-        }
+        },
+        text = "Nilai"
     )
     fig.update_layout(
         height=500,
@@ -313,6 +314,12 @@ masih dilestarikan hingga saat ini.
         font=dict(color="white"),
     )
     fig.update_yaxes(range=[5.6,5.95], ticksuffix="%")
+
+    fig. update_traces(
+        texttemplate="%{text:.2f}%",
+        textposition="outside",
+        textfont=dict(color="white", size=12)
+    )
     fig.add_annotation(
     text="Sumber: BPS Jatim Tahun 2025",
     xref="paper",
