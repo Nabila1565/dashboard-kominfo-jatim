@@ -634,7 +634,7 @@ masih dilestarikan hingga saat ini.
         mean_inflasi_tahunan,
         x="tahun",
         y="jumlah",
-        text = "jumlah"
+        text = "jumlah", 
         markers=True)
 
     fig_line.update_traces(
