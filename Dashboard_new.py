@@ -581,7 +581,7 @@ masih dilestarikan hingga saat ini.
         margin-bottom: 20px;
     }
     </style>
-    <h2 class="info-jatim-title">Inflasi Provinsi Jawa Timur Tahun 2018-2025/h2>
+    <h2 class="info-jatim-title">Inflasi Provinsi Jawa Timur Tahun 2018-2025</h2>
     """, unsafe_allow_html=True
     )
     
