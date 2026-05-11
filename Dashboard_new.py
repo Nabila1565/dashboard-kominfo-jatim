@@ -1121,13 +1121,17 @@ elif menu == "Dashboard":
             filtered,
             x="Tahun",
             y="Nilai",
+            text = "Nilai",
             markers=True,
         )
         fig.update_traces(
-            marker=dict(size=9),
+            texttemplate="%{text:.2f}%",
+            textposition="top center",
+            textfont=dict(color="white", size=12),
+)           marker=dict(size=9),
             line=dict(width=3)
         )
-
+          
         fig.update_layout(
             plot_bgcolor="#000000",
             paper_bgcolor="#000000",
