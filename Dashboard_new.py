@@ -448,7 +448,7 @@ masih dilestarikan hingga saat ini.
     """, unsafe_allow_html=True
     )
 
-    fig = px.line(df, x="Tahun", y="Nilai", markers=True, labels={"Tahun":"Tahun","Nilai": "Nilai(%)"})
+    fig = px.line(df, x="Tahun", y="Nilai", markers=True, labels={"Tahun":"Tahun","Nilai": "Nilai(%)"}, text="Nilai")
     fig.update_layout(
     plot_bgcolor="#000000",
     paper_bgcolor="#000000",
@@ -461,7 +461,11 @@ masih dilestarikan hingga saat ini.
             title=dict(text="Nilai(%)", font=dict(color="white")),
             tickfont=dict(color="white"))
     )
-
+    fig.update_traces(
+    texttemplate="%{text:.2f}%",
+    textposition="top center",
+    textfont=dict(color="white", size=12)
+    )
     fig.add_annotation(
     text="Sumber: BPS Jatim Tahun 2018-2025",
     xref="paper",
