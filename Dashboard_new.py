@@ -313,7 +313,7 @@ masih dilestarikan hingga saat ini.
         paper_bgcolor="#000000",
         font=dict(color="white"),
     )
-    fig.update_yaxes(range=[5.6,5.95], ticksuffix="%")
+    fig.update_yaxes(range=[5.6,6.05], ticksuffix="%")
 
     fig. update_traces(
         texttemplate="%{text:.2f}%",
