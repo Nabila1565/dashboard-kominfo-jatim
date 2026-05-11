@@ -1512,6 +1512,20 @@ elif menu == "Dashboard":
         linewidth=0
     )
 
+
+    # Label nilai di atas batang
+    for bar in bars:
+        tinggi = bar.get_height()
+        ax.text(
+            bar.get_x() + bar.get_width() / 2,  # posisi x: tengah batang
+            tinggi + 0.02,                      # posisi y: sedikit di atas batang
+            f"{tinggi:.2f}%",                   # format label
+            ha="center",
+            va="bottom",
+            color="white",
+            fontsize=11,
+            fontweight="bold"
+        )
     # Judul dan label
     ax.set_title(
         f"Inflasi Kabupaten/Kota Tahun {tahun_pilihan}",
