@@ -821,7 +821,7 @@ elif menu == "Dashboard":
 
     /* Isi/dropdown tahun tetap gelap */
     [data-testid="stSelectbox"] [data-baseweb="select"] * {
-        color: #111111 !important;
+        color: white !important;
     }
     </style>
     """, unsafe_allow_html=True)
