@@ -1282,28 +1282,6 @@ elif menu == "Dashboard":
         # Urutkan tahun manual
         st.session_state.filter_tahun_inflasi = sorted(tahun_dipilih)
 
-    def reset_tahun_inflasi():
-        selected = st.session_state.filter_tahun_inflasi
-
-        tahun_dipilih = [t for t in selected if t != "Semua"]
-
-        # Kalau semua pilihan disilang/kosong, balik ke "Semua"
-        if len(selected) == 0:
-            st.session_state.filter_tahun_inflasi = ["Semua"]
-            return
-        tahun_dipilih = [t for t in selected if t != "Semua"]
-        # Kalau "Semua" dipilih bersama tahun lain, balik jadi hanya "Semua"
-        if "Semua" in selected and len(selected) > 1:
-            st.session_state.filter_tahun_inflasi = ["Semua"]
-            return
-
-        # Kalau semua tahun dipilih manual, otomatis ganti jadi "Semua"
-        if set(tahun_dipilih) == set(tahun_inflasi):
-            st.session_state.filter_tahun_inflasi = ["Semua"]
-            return
-
-        # Kalau pilih tahun manual, urutkan tahun
-        st.session_state.filter_tahun_inflasi = sorted(tahun_dipilih)
 
 
     selected_tahun_inflasi = st.multiselect(
