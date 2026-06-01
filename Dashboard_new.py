@@ -848,8 +848,7 @@ elif menu == "Dashboard":
     max_value = max(max_left, max_right)
 
     # Batas sumbu X dibuat dari 5 sampai nilai tertinggi + ruang label
-    x_min = max_value 
-    x_max = max_value + 0.45
+   
 
     with col1:
         st.markdown(f"""
@@ -882,7 +881,6 @@ elif menu == "Dashboard":
             font=dict(color="white"),
             margin=dict(l=50, r=70, t=20, b=50),
             xaxis=dict(
-                range=[x_min, x_max],
                 tickmode="linear",
                 dtick=0.5,
                 tickfont=dict(color="white"),
