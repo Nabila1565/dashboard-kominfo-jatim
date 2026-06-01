@@ -934,7 +934,6 @@ elif menu == "Dashboard":
             margin=dict(l=130, r=100, t=40, b=40),
 
             xaxis=dict(
-                range=[5, 6],
                 title=dict(
                     text="Nilai (%)",
                     font=dict(color="white")
