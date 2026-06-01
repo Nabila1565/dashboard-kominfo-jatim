@@ -899,7 +899,6 @@ elif menu == "Dashboard":
         text="Sumber: Open Data Jatim",
         xref="paper",
         yref="paper",
-        x=0,
         y=-0.22,
         showarrow=False,
         font=dict(size=16, color="white"),
