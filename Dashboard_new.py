@@ -848,7 +848,7 @@ elif menu == "Dashboard":
     max_value = max(max_left, max_right)
 
     # Batas sumbu X dibuat dari 5 sampai nilai tertinggi + ruang label
-    x_min = 5
+    x_min = max_value 
     x_max = max_value + 0.45
 
     with col1:
@@ -899,6 +899,7 @@ elif menu == "Dashboard":
         text="Sumber: Open Data Jatim",
         xref="paper",
         yref="paper",
+        x=0,
         y=-0.22,
         showarrow=False,
         font=dict(size=16, color="white"),
