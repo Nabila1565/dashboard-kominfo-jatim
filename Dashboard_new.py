@@ -800,7 +800,7 @@ elif menu == "Dashboard":
     st.markdown("""
     <style>
     .tahun-putih {
-        color: #FFFFFF !important;
+        color: black !important;
         font-size: 26px !important;
         font-weight: 800 !important;
         margin-top: 25px !important;
